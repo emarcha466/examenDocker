@@ -28,11 +28,6 @@ $dompdf->setPaper('A4', 'portrait');
 $dompdf->render();
 $output = $dompdf->output();
 
-// Ruta local en el contenedor "pdf"
-//$file_path = '/pdfs/cestaNavidad.pdf';
-//$file_name = "CestaNavidad.pdf";
-// Guardar el PDF en el directorio local
-///file_put_contents($file_name, $output);
 echo $output;
 
 ?>
