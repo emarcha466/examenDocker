@@ -26,9 +26,9 @@ class ServicioCorreos {
         $mail->Port       = 587;
         $mail->Username   = "emarcha466@g.educaand.es";
         $mail->Password   = "cbdo sdoz aziz tlud";
-        $mail->SetFrom('emarcha466@g.educaand.es', 'Prueba');
+        $mail->SetFrom('emarcha466@g.educaand.es', 'Cesta Navidad');
         $mail->Subject    = $this->asunto;
-        $mail->addAttachment("pdfs/mipdf.pdf");
+        $mail->addAttachment("pdfs/cestaNavidad.pdf");
         $mail->MsgHTML($this->descripcion);
         $address = $this->destinatario;
         $mail->AddAddress($address, "Yo");
