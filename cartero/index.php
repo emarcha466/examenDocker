@@ -24,7 +24,7 @@ if($cesta !=null){
     $pdf = $response->getBody();
     
     // Guardar el PDF en el directorio local
-    //file_put_contents('./pdfs/cestaNavidad.pdf', $pdf);
+    file_put_contents('./pdfs/cestaNavidad.pdf', $pdf);
     
     // Configurar las cabeceras para la descarga del archivo
     header('Content-Type: application/pdf');
